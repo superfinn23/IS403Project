@@ -1,0 +1,36 @@
+﻿@model FinancialReports.Models.ReportType
+
+@{
+    ViewBag.Title = "FinancialReports";
+}
+
+<h2>Request Financial Reports</h2>
+<br />
+@using (Html.BeginForm("SelectedReport", "FinancialReports", FormMethod.Get))
+{//creat the form to pass back data to the user
+    <fieldset>
+        Select Financial Report Type:
+        @Html.DropDownList("Reports")
+        <br />
+        <br />
+        <form>
+            Report Start Date:
+            <input type="date" name="start-date">
+        </form>
+        <br />
+        <br />
+        <form>
+            Report End Date:
+            <input type="date" name="end-date">
+        </form>
+        <br />
+        Select Payment Type(s):
+        @Html.DropDownList("PaymentMethods")
+        <br />
+        <br />
+        <p>
+            @Html.ActionLink("Generate Report", "GenerateReport", "FinancialReports", null, new { @class = "btn btn-default btn-large" })
+            <!--<input type="submit" value="Generate Report" />-->
+        </p>
+    </fieldset>
+}

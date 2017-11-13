@@ -1,0 +1,69 @@
+﻿.center-align {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+body {
+    background-color: rgba(169, 157, 114, .8);
+}
+
+.jumbotron {
+    background-image: url(Images/market-32store_crop.png);
+    position: center;
+    background-size: cover;
+    height: 300px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.header-logo {
+    float: left;
+    margin: auto;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.header-text {
+    float: right;
+    margin-top: -8px;
+    margin-bottom: -20px;
+    position: fixed;
+    display: inline-block;
+    color: #A99D71
+}
+
+.navbar-inverse {
+    background-color: #322111;
+    border-color: #322111;
+}
+
+
+.navbar-inverse .navbar-brand {
+    color: #A99D71;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    color: #A99D71;
+}
+
+.container > .navbar-header,
+.container > .navbar-collapse {
+    margin-right: -15px;
+    margin-left: -7px;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .container > .navbar-header,
+    .container > .navbar-collapse {
+        margin-top: 10px;
+    }
+
+.content-center {
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
